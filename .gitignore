@@ -1,0 +1,22 @@
+# Secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Environment
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Data
+chroma_db/
+eval/.chroma_eval/
+data/uploads/*
+!data/uploads/.gitkeep
+
+# Editor / OS
+.vscode/
+.DS_Store
+Thumbs.db

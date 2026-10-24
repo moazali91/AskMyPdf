@@ -1,0 +1,24 @@
+[client]
+toolbarMode = "minimal"
+
+[server]
+# The file watcher crashes while scanning the transformers package and then misses
+# edits to rag/, serving stale code. Restart the app after code changes instead.
+fileWatcherType = "none"
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+base = "dark"
+primaryColor = "#7C83FD"
+backgroundColor = "#0E1117"
+secondaryBackgroundColor = "#171C26"
+textColor = "#E6E8EE"
+borderColor = "#262D3B"
+baseRadius = "0.6rem"
+showWidgetBorder = true
+
+[theme.sidebar]
+backgroundColor = "#11151E"
+secondaryBackgroundColor = "#1A202C"
