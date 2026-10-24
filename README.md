@@ -119,7 +119,7 @@ chroma_db/                 # vector store
 ### 2. Install
 
 ```bash
-git clone https://github.com/<your-username>/AskMyPdf.git
+git clone https://github.com/moazali91/AskMyPdf.git
 cd AskMyPdf
 python -m venv venv
 venv\Scripts\activate          # Windows
