@@ -11,14 +11,6 @@ It runs fully offline with a local model through Ollama, or online through Groq'
 ![Groq](https://img.shields.io/badge/Groq-gpt--oss--20b-F55036)
 ![Ollama](https://img.shields.io/badge/Ollama-Llama%203.2%203B-000000?logo=ollama&logoColor=white)
 
-## Screenshots
-
-| Start screen | Cited answers |
-|---|---|
-| ![Start screen with suggested questions](docs/screenshots/home.png) | ![Chat with page citations](docs/screenshots/chat.png) |
-| **Refuses when the answer isn't in the documents** | **Live retrieval settings** |
-| ![Refusal for an off-topic question](docs/screenshots/refusal.png) | <img src="docs/screenshots/settings.png" alt="Settings panel" width="260"> |
-
 ## What The System Does
 
 - Upload one or more text-based PDFs and keep them across restarts
