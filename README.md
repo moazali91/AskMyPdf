@@ -59,8 +59,6 @@ Findings:
 - Llama 3.2 3B retrieves the right pages but often cites the wrong excerpt number. A larger model fixes this.
 - Ollama times were measured on a CPU-only laptop.
 
-Full tables are in [eval/results/summary.md](eval/results/summary.md).
-
 ## Tech Stack
 
 - **Interface**: Streamlit
