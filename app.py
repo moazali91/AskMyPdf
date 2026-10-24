@@ -258,7 +258,6 @@ def render_sources(msg: dict) -> None:
                 )
 
 
-# ---------- State ----------
 load_embedding_model()
 st.markdown(CSS, unsafe_allow_html=True)
 st.session_state.setdefault("messages", [])
@@ -268,7 +267,6 @@ st.session_state.setdefault("mode", config.RETRIEVAL_MODE)
 docs = document_stats()
 
 
-# ---------- Sidebar ----------
 with st.sidebar:
     st.markdown(
         '<div class="brand"><div class="brand-logo">A</div><div class="brand-name">AskMyPDF</div></div>'
@@ -384,7 +382,6 @@ with st.sidebar:
     )
 
 
-# ---------- Main ----------
 question = st.chat_input(
     "Ask a question about your documents" if docs else "Upload a PDF to start asking questions",
     disabled=not docs,
@@ -392,7 +389,7 @@ question = st.chat_input(
 pending = st.session_state.pop("pending", None)
 summary_of = pending["summary"] if isinstance(pending, dict) else None
 question = question or (pending if isinstance(pending, str) else None)
-history = [m for m in st.session_state.messages]  # before this turn, for follow-ups
+history = list(st.session_state.messages)  # snapshot before this turn, for follow-ups
 if summary_of:
     st.session_state.messages.append({"role": "user", "content": f"Summarize **{summary_of}**"})
 elif question:
@@ -431,13 +428,13 @@ if question or summary_of:
                     history=[{"role": m["role"], "content": m["content"]} for m in history],
                 )
             show_thinking(placeholder, f"Generating answer with {provider.split(' ')[0]}")
-            first = next(answer.stream, "")  # waits for the first token
+            first = next(answer.stream, "")
             with placeholder:
                 raw = st.write_stream(itertools.chain([first], answer.stream))
             text = raw if is_refusal(raw) else clean_citations(raw, len(answer.sources))
             if text != raw or is_refusal(text):
                 with placeholder:
-                    render_text(text)  # replace the streamed text with the cleaned version
+                    render_text(text)
         except LLMError as err:
             placeholder.error(str(err), icon=":material/error:")
             text = None

@@ -32,7 +32,7 @@ EVAL_DIR = Path(__file__).resolve().parent
 RESULTS_DIR = EVAL_DIR / "results"
 INDEX_DIR = EVAL_DIR / ".chroma_eval"
 
-# (chunk size, overlap, top-k): the brief's table plus k=6 variants
+# (chunk size, overlap, top-k)
 SWEEP = [(500, 50, 4), (500, 50, 6), (1000, 150, 4), (1000, 150, 6), (1500, 200, 6)]
 
 RATE_LIMIT_RETRIES = 6
@@ -57,7 +57,7 @@ def build_index(pdf: Path, chunk_size: int, overlap: int) -> int:
 
     from rag.ingest import get_vectorstore, ingest_pdf
 
-    get_vectorstore().delete_collection()  # start clean every experiment
+    get_vectorstore().delete_collection()
     return ingest_pdf(pdf)
 
 
