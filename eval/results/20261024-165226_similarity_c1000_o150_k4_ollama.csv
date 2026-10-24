@@ -1,0 +1,21 @@
+question,answerable,expected_pages,retrieved_pages,hit,rank,answer,refused,cited_pages,cite_ok,seconds
+Who wrote the project brief?,True,1,4;1;6;1,True,2,I couldn't find that in the uploaded documents.,True,,False,37.66
+Are scanned or image-only PDFs supported in the first version?,True,1;7,1;1;1;4,True,1,"Scanned or image-only PDFs are out of scope for the first version, as stated in excerpt [4].",False,4,False,50.6
+Which functional requirement covers streaming the answer as it is generated?,True,2,2;6;1;3,True,1,The functional requirement that covers streaming the answer as it is generated is FR-7 [1].,False,2,True,51.97
+How fast should an answer be when using Groq?,True,2;6,3;7;6;2,True,3,"According to excerpt [3], the response time target for the system is 10 seconds for local queries and 3 seconds for queries using Groq.",False,6,True,58.83
+How much RAM is recommended when the language model runs on Ollama?,True,2,2;7;6;3,True,1,"[2] (from AskMyPDF_Project_Brief.pdf, page 7) Recommended RAM is 8 GB or more when the language model runs on Ollama.",False,7,False,40.66
+How many dimensions do the embedding vectors have?,True,3;4,7;4;4;5,True,2,The embedding vectors have 384 dimensions. [3],False,4,True,51.28
+Which smaller local models can be used instead of Llama 3.2 3B?,True,3;7,7;2;7;3,True,1,"According to excerpt [4], smaller local models that can be used instead of Llama 3.2 3B are:  * sentence-transformers/all-MiniLM-L6-v2 via langchain-huggingface * Qwen 2.5 3B / 1.5B via langchain-ollama",False,3,True,66.0
+Why does the vector store use stable chunk IDs?,True,4,4;3;5;7,True,1,"The vector store uses stable chunk IDs to avoid duplicates, as indicated by the following excerpt: ""Vectors, text and metadata stored in ChromaDB on disk with stable IDs (file name + index) to avoid duplicates"" [4].",False,7,False,48.5
+What temperature setting is used when generating answers?,True,4;7,6;7;4;6,True,2,"The temperature setting used when generating answers is 0, as stated in the rule for Small models drift.",False,,False,45.96
+Which embedding model is proposed for supporting Urdu?,True,4,4;3;4;1,True,1,The proposed embedding model for supporting Urdu is paraphrase-multilingual-MiniLM-L12-v2 embeddings [3].,False,4,True,49.84
+When is the Streamlit interface phase scheduled in the development plan?,True,5,5;2;1;6,True,1,I couldn't find that in the uploaded documents.,True,,False,34.26
+How big is the embedding model download?,True,3;5,7;3;7;4,True,2,The embedding model download size is not explicitly stated in the excerpts. I couldn't find that in the uploaded documents.,True,,False,42.36
+What faithfulness score is targeted in the evaluation?,True,6,6;7;6;5,True,1,The faithfulness score targeted in the evaluation is 0.8 or more [1].,False,6,True,28.26
+Which Python version should be chosen in the Streamlit Cloud advanced settings?,True,7,2;5;6;2,False,,I couldn't find that in the uploaded documents.,True,,False,21.18
+What should you do if the Groq API key is accidentally committed to GitHub?,True,7,7;6;5;7,True,1,"If the Groq API key is accidentally committed to GitHub, delete it in the Groq console and create a new one.",False,,False,68.14
+Who won the 2022 FIFA World Cup?,False,,7;2;4;1,,,I couldn't find that in the uploaded documents.,True,,,44.96
+How much does Groq's paid developer plan cost per month?,False,,3;2;2;7,,,I couldn't find that in the uploaded documents.,True,,,27.91
+How many people have used the public demo so far?,False,,1;5;7;1,,,I couldn't find that in the uploaded documents.,True,,,39.18
+How many parameters does the all-MiniLM-L6-v2 model have?,False,,7;3;7;7,,,I couldn't find that in the uploaded documents.,True,,,42.1
+Which university is the author enrolled at?,False,,1;1;7;1,,,I couldn't find that in the uploaded documents.,True,,,36.66

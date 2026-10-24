@@ -1,0 +1,21 @@
+question,answerable,expected_pages,retrieved_pages,hit,rank
+Who wrote the project brief?,True,1,1;4;5;7;3;6,True,1
+Are scanned or image-only PDFs supported in the first version?,True,1;7,1;4;6;1;7;6,True,1
+Which functional requirement covers streaming the answer as it is generated?,True,2,2;1;5;3;3;5,True,1
+How fast should an answer be when using Groq?,True,2;6,2;1;7;6;1;7,True,1
+How much RAM is recommended when the language model runs on Ollama?,True,2,2;2;5;7;3;7,True,1
+How many dimensions do the embedding vectors have?,True,3;4,4;3;4;7;5;5,True,1
+Which smaller local models can be used instead of Llama 3.2 3B?,True,3;7,3;5;7;2;2;6,True,1
+Why does the vector store use stable chunk IDs?,True,4,4;5;4;7;5;1,True,1
+What temperature setting is used when generating answers?,True,4;7,2;4;7;6;7;1,True,2
+Which embedding model is proposed for supporting Urdu?,True,4,4;7;3;5;4;7,True,1
+When is the Streamlit interface phase scheduled in the development plan?,True,5,6;5;3;1;7;3,True,2
+How big is the embedding model download?,True,3;5,4;3;5;7;4;7,True,2
+What faithfulness score is targeted in the evaluation?,True,6,6;1;5;4;7;2,True,1
+Which Python version should be chosen in the Streamlit Cloud advanced settings?,True,7,7;2;6;6;1;3,True,1
+What should you do if the Groq API key is accidentally committed to GitHub?,True,7,7;2;5;1;6;7,True,1
+Who won the 2022 FIFA World Cup?,False,,1;6;2;4;3;7,,
+How much does Groq's paid developer plan cost per month?,False,,1;2;3;2;5;1,,
+How many people have used the public demo so far?,False,,1;6;6;1;7;7,,
+How many parameters does the all-MiniLM-L6-v2 model have?,False,,4;3;3;4;7;7,,
+Which university is the author enrolled at?,False,,1;4;3;2;7;5,,

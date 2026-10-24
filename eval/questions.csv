@@ -1,0 +1,21 @@
+question,expected_page,answerable
+Who wrote the project brief?,1,yes
+Are scanned or image-only PDFs supported in the first version?,1;7,yes
+Which functional requirement covers streaming the answer as it is generated?,2,yes
+How fast should an answer be when using Groq?,2;6,yes
+How much RAM is recommended when the language model runs on Ollama?,2,yes
+How many dimensions do the embedding vectors have?,3;4,yes
+Which smaller local models can be used instead of Llama 3.2 3B?,3;7,yes
+Why does the vector store use stable chunk IDs?,4,yes
+What temperature setting is used when generating answers?,4;7,yes
+Which embedding model is proposed for supporting Urdu?,4,yes
+When is the Streamlit interface phase scheduled in the development plan?,5,yes
+How big is the embedding model download?,3;5,yes
+What faithfulness score is targeted in the evaluation?,6,yes
+Which Python version should be chosen in the Streamlit Cloud advanced settings?,7,yes
+What should you do if the Groq API key is accidentally committed to GitHub?,7,yes
+Who won the 2022 FIFA World Cup?,,no
+How much does Groq's paid developer plan cost per month?,,no
+How many people have used the public demo so far?,,no
+How many parameters does the all-MiniLM-L6-v2 model have?,,no
+Which university is the author enrolled at?,,no
