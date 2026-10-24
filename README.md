@@ -45,7 +45,7 @@ Excerpts are numbered `[1]…[4]` in the prompt; the model cites numbers, and th
 - **Llama 3.2 3B** retrieves the right pages but often cites the wrong excerpt number; a larger model fixes this.
 - Ollama times were measured on a CPU-only laptop.
 
-Full tables: [eval/results/summary.md](eval/results/summary.md). Per-question results are in the CSVs next to it.
+Full tables: [eval/results/summary.md](eval/results/summary.md). Each run also writes per-question CSVs to `eval/results/` (not committed).
 
 ## Getting started
 
@@ -118,7 +118,7 @@ rag/
 eval/
   questions.csv      test set
   run_eval.py        evaluation script
-  results/           result tables and per-question CSVs
+  results/           result tables
 ```
 
 ## Tech stack
